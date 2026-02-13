@@ -55,7 +55,5 @@ Colors – The palette is applied directly via Tailwind’s arbitrary value synt
 
 Content – Replace placeholder text, links, and the avatar image with your own information.
 
-Avatar – To add a real photo, replace the <i> tag inside the avatar <div> with an <img src="your-photo.jpg"> and adjust styling.
-
 **License**
 This project is open‑source and available under the MIT license.
