@@ -29,24 +29,27 @@ Information:
 
 ----------------------------------------
 **How to Run the Project Locally
+______________________________________________
 Follow these steps to get the portfolio up and running on your own machine.**
 
-Prerequisites
+Prerequisites :
+__________________________
 PHP >= 8.2
 
-Composer
+Composer 
 
 Node.js & npm (optional, only if you later want to customize Tailwind locally)
-
-Clone the repository
-
+--------------------------------------------------------------------------
+Clone the repository:
+____________________________________________________
 bash
 
 git clone https://github.com/rimerGAB/your-repo-name.git
 cd your-repo-name
-----------------------------------------------------------
+______________________________________________________________
 
 Start the local development server:
+---------------------------------------------------------
 
 bash
 
@@ -54,26 +57,29 @@ php artisan serve
 
 __________________________________________________________________
 Visit the application:
+-----------------------------------------------------------------
 Open your browser and go to  http://localhost:8000. 
 
 
 The home page should appear.
 
 or you can also click it by doing ctrl + click
--------------------------------------------------------------------------------
+___________________________________________________________
 
 Navigate the pages:
+-----------------------------------------------------------------
 
 Use the links in the navigation bar to explore /about and /information
------------------------------------------------------------------------
+_____________________________________________________________________
 
 
 **Customization**
+-------------------------------------------------------------------------------
 Colors – The palette is applied directly via Tailwind’s arbitrary value syntax (e.g., bg-[#ECDFCC]). To use named colors, extend the tailwind.config.js file and rebuild assets.
 
 Content – Replace placeholder text, links, and the avatar image with your own information.
 __________________________________________________________________
 
 **License**
----------------
+------------------------------------
 This project is open‑source and available under the MIT license.
