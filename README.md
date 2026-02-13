@@ -3,8 +3,8 @@
 
 
 Rimer Gabaleo Portfolio
-_____________________________________________________
-***A personal portfolio website built with Laravel and Tailwind CSS, featuring a custom color palette (#181C14, #3C3D37, #697565, #ECDFCC). The site consists of three pages: a welcoming Home page, a detailed About page, and an Information page showcasing projects and contact details.***
+
+***-A personal portfolio website built with Laravel and Tailwind CSS, featuring a custom color palette (#181C14, #3C3D37, #697565, #ECDFCC). The site consists of three pages: a welcoming Home page, a detailed About page, and an Information page showcasing projects and contact details.***
 
 
 
@@ -39,9 +39,10 @@ PHP >= 8.2
 Composer 
 
 Node.js & npm (optional, only if you later want to customize Tailwind locally)
---------------------------------------------------------------------------
-Clone the repository:
 ____________________________________________________
+Clone the repository:
+--------------------------------------------------------------------------
+
 bash
 
 git clone https://github.com/rimerGAB/your-repo-name.git
