@@ -37,7 +37,10 @@ bash
 
 php artisan serve
 Visit the application
-Open your browser and go to http://localhost:8000. The home page should appear.
+Open your browser and go to
+http://localhost:8000. 
+------------------------------------------------------------------------------
+The home page should appear.
 or you can also click it by doing ctrl + click
 -------------------------------------------------------------------------------
 
