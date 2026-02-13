@@ -1,59 +1,123 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Rimer Gabaleo Portfolio
+A personal portfolio website built with Laravel and Tailwind CSS, featuring a custom color palette (#181C14, #3C3D37, #697565, #ECDFCC). The site consists of three pages: a welcoming Home page, a detailed About page, and an Information page showcasing projects and contact details.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Pages Overview
+Home Page
+A clean landing page with a friendly introduction, avatar placeholder, and calls‑to‑action leading to the About and Information pages.
 
-## About Laravel
+html
+<!-- Simplified structure -->
+<section class="...">
+  <div class="avatar">...</div>
+  <h1>Hi, I'm Rimer Gabaleo</h1>
+  <p>Laravel developer ...</p>
+  <div class="buttons">
+    <a href="/about">Learn More About Me</a>
+    <a href="/information">See My Work</a>
+  </div>
+</section>
+About Page
+Provides an in‑depth look at the developer – bio, core skills with progress bars, work experience, and contact details.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+html
+<!-- Simplified structure -->
+<section class="...">
+  <div class="profile-card">...</div>
+  <div class="bio">...</div>
+  <div class="skills">...</div>
+  <div class="experience">...</div>
+</section>
+Information Page
+Displays featured projects and a contact section, encouraging visitors to get in touch or download a resume.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+html
+<!-- Simplified structure -->
+<section class="...">
+  <h2>Featured Projects</h2>
+  <div class="project-grid">...</div>
+</section>
+<section class="contact">...</section>
+Screenshots – Add actual screenshots of your three pages here by placing image files in a screenshots/ folder and linking them:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+text
+![Home Page](screenshots/home.png)
+![About Page](screenshots/about.png)
+![Information Page](screenshots/information.png)
+Technologies Used
+Laravel 11.x (or your version)
 
-## Learning Laravel
+Tailwind CSS – for styling (via CDN, no build step required in this setup)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Font Awesome – icons (via CDN)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+How to Run the Project Locally
+Follow these steps to get the portfolio up and running on your own machine.
 
-## Laravel Sponsors
+Prerequisites
+PHP >= 8.2
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Composer
 
-### Premium Partners
+Node.js & npm (optional, only if you later want to customize Tailwind locally)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Installation
+Clone the repository
 
-## Contributing
+bash
+git clone https://github.com/rimerGAB/your-repo-name.git
+cd your-repo-name
+Install PHP dependencies
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+bash
+composer install
+Copy the environment file
 
-## Code of Conduct
+bash
+cp .env.example .env
+Generate an application key
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+bash
+php artisan key:generate
+Set up your environment variables (if needed)
+Edit the .env file to match your local database or mail settings (not required for a static portfolio, but Laravel expects it).
 
-## Security Vulnerabilities
+(Optional) Install and compile front‑end assets
+This project uses Tailwind via CDN, so no build step is strictly necessary. However, if you later want to customize Tailwind, you can run:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+bash
+npm install
+npm run dev
+Start the local development server
 
-## License
+bash
+php artisan serve
+Visit the application
+Open your browser and go to http://localhost:8000. The home page should appear.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Navigate the pages
+Use the links in the navigation bar to explore /about and /information.
+
+File Structure (Views)
+All Blade templates are located in resources/views/:
+
+home.blade.php – Landing page
+
+about.blade.php – About page
+
+information.blade.php – Projects & contact page
+
+Routes are defined in routes/web.php:
+
+php
+Route::get('/', function () { return view('home'); });
+Route::get('/about', function () { return view('about'); });
+Route::get('/information', function () { return view('information'); });
+Customization
+Colors – The palette is applied directly via Tailwind’s arbitrary value syntax (e.g., bg-[#ECDFCC]). To use named colors, extend the tailwind.config.js file and rebuild assets.
+
+Content – Replace placeholder text, links, and the avatar image with your own information.
+
+Avatar – To add a real photo, replace the <i> tag inside the avatar <div> with an <img src="your-photo.jpg"> and adjust styling.
+
+License
+This project is open‑source and available under the MIT license.
