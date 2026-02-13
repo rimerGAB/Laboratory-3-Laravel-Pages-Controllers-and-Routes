@@ -6,5 +6,5 @@ Rimer Gabaleo Portfolio
 
 
 ![Home](screenshot/home.jpg)
-![About](screenshot/About.jpg)
+![About](screenshot/About.jpeg)
 ![Information](screenshot/Information.jpg)
