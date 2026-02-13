@@ -25,21 +25,24 @@ Node.js & npm (optional, only if you later want to customize Tailwind locally)
 
 Clone the repository
 
-bash ----------------------------------------------------
+bash
+
 git clone https://github.com/rimerGAB/your-repo-name.git
 cd your-repo-name
 ----------------------------------------------------------
 
 Start the local development server
 
-bash--------------------------------------------------------------------------
+bash
+
 php artisan serve
 Visit the application
 Open your browser and go to http://localhost:8000. The home page should appear.
 or you can also click it by doing ctrl + click
 -------------------------------------------------------------------------------
 
-Navigate the pages: --------------------------------------------------
+Navigate the pages:
+
 Use the links in the navigation bar to explore /about and /information
 -----------------------------------------------------------------------
 
