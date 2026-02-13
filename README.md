@@ -5,19 +5,22 @@ Rimer Gabaleo Portfolio
 ----------------------------------------------------------
 ***A personal portfolio website built with Laravel and Tailwind CSS, featuring a custom color palette (#181C14, #3C3D37, #697565, #ECDFCC). The site consists of three pages: a welcoming Home page, a detailed About page, and an Information page showcasing projects and contact details.***
 
-HOME : 
+
 
 -----------------------------------
+HOME : 
 ![Home](screenshot/home.jpg)
 
-About:
+
 
 -----------------------------------
+About:
 ![About](screenshot/About.jpeg)
 
-Information:
 
 ----------------------------------------
+Information:
+
 ![Information](screenshot/Information.jpg)
 
 
@@ -42,16 +45,19 @@ git clone https://github.com/rimerGAB/your-repo-name.git
 cd your-repo-name
 ----------------------------------------------------------
 
-Start the local development server
+Start the local development server:
 
 bash
 
 php artisan serve
-Visit the application
+
+__________________________________________________________________
+Visit the application:
 Open your browser and go to  http://localhost:8000. 
 
 
 The home page should appear.
+
 or you can also click it by doing ctrl + click
 -------------------------------------------------------------------------------
 
@@ -65,6 +71,8 @@ Use the links in the navigation bar to explore /about and /information
 Colors – The palette is applied directly via Tailwind’s arbitrary value syntax (e.g., bg-[#ECDFCC]). To use named colors, extend the tailwind.config.js file and rebuild assets.
 
 Content – Replace placeholder text, links, and the avatar image with your own information.
+__________________________________________________________________
 
 **License**
+---------------
 This project is open‑source and available under the MIT license.
